@@ -21,7 +21,7 @@ $num = mysql_numrows($pids);
 $i = 0;
 while ($i < $num) {
 	$pid = mysql_result($pids, $i, "object_id");
-	$query = "SELECT created FROM  `jos_content` WHERE id = " . $pid;
+	$query = "SELECT created FROM  jos_content WHERE id = " . $pid;
 	echo $query; 
 	print "
 	";
@@ -30,7 +30,7 @@ while ($i < $num) {
 		echo mysql_error();
 	}
 	$ct = mysql_result($created, 0, "created");
-	$query = "SELECT ID FROM  `wp_posts` WHERE  `post_date` =  '" . $ct . "' AND post_type =  'post'";
+	$query = "SELECT ID FROM  wp_posts WHERE  post_date =  '" . $ct . "' AND post_type =  'post'";
 	echo $query; 
 	print "
 	";
