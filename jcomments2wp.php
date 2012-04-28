@@ -9,9 +9,9 @@ mysql_connect('localhost', $username, $password);
 @mysql_set_charset('utf8');
 
 $query = "SELECT DISTINCT object_id FROM jos_jcomments";
- echo $query; 
-		print "
-		";
+echo $query; 
+print "
+";
 $pids = mysql_query($query);
 
 if (!$pids) {
@@ -72,3 +72,4 @@ while ($i < $num) {
 }
 mysql_close();
 ?>
+
