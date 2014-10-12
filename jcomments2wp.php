@@ -1,11 +1,11 @@
 <?php
 
-$username = "username";
-$password = "password";
-$database = "database";
+$username = "pressm_wp44deet";
+$password = "VL1a9[&|>&kc}$zn";
+$database = "pressm_wp44deet";
 
-mysql_connect('localhost', $username, $password);
-@mysql_select_db($database) or die( "Unable to select database");
+mysql_connect('localhost', $pressm_gjh482, $3744RO4f);
+@mysql_select_db($pressm_gjh482) or die( "Unable to select database");
 @mysql_set_charset('utf8');
 
 $query = "SELECT DISTINCT object_id FROM jos_jcomments";
